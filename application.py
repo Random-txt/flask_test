@@ -1,7 +1,9 @@
 from distutils.log import debug
+from email.mime import application
 from flask import Flask
 
-app = Flask(__name__)
+application = Flask(__name__)
+app = application
 
 @app.route('/')
 def test_world():
