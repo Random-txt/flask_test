@@ -1,12 +1,12 @@
+from flask import Flask, request
 
-from flask import Flask
 
 application = Flask(__name__)
 
-
 @application.route('/')
-def test_world():
-    return 'test is working'
+def index():
+    return "Hello world. Pray that I see this"
 
-if __name__ == "__main__":
-    application.run(debug=True)
+if __name__ == '__main__':
+    application.run()
+    
