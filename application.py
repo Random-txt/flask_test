@@ -5,7 +5,7 @@ from flask import Flask
 application = Flask(__name__)
 app = application
 
-@app.route('/')
+@application.route('/')
 def test_world():
     return 'test is working'
 
