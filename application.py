@@ -10,4 +10,4 @@ def test_world():
     return 'test is working'
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    application.run(debug=True)
