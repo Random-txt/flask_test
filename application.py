@@ -1,10 +1,9 @@
 from distutils.log import debug
 from flask import Flask
 
-application = Flask(__name__)
-app = application
+app = Flask(__name__)
 
-@application.route('/')
+@app.route('/')
 def test_world():
     return 'test is working'
 
